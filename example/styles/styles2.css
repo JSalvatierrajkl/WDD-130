@@ -1,0 +1,46 @@
+header{
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+}
+main{
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+}
+.logo {
+    background-color: gray;
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+}
+#top{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#desk {
+    width: 300px;
+    height: 300px;
+    border: 20px solid rgb(63, 63, 63);
+    border-radius: 50%;
+    margin: 50px;
+    margin-left: 100px;
+
+}
+#graphic {
+    width: 300px;
+    height: 300px;
+    border: 20px solid rgb(63, 63, 63);
+    border-radius: 50%;
+    margin: 50px;
+}
+#person {
+    width: 300px;
+    height: 300px;
+    border: 20px solid rgb(63, 63, 63);
+    border-radius: 50%;
+    margin: 50px;
+    margin-right: 100px;
+}

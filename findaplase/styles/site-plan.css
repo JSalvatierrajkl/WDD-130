@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Source+Sans+Pro:ital@1&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -10,7 +10,7 @@ Fonts are separated by a | */
   --accent1-color: #79D06B;
   --accent2-color: #80ede4;
  
-  /* Other colors
+  /* Other usefull colors
     #38A3A5
     #45C68E
     #509250
@@ -20,8 +20,8 @@ Fonts are separated by a | */
     #88ECBD
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Rubik Dirt", arial, sans-serif;
+  --paragraph-font: "Source Sans Pro", sans-serif, Helvetica;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #275434;  /* headlines on a white background */ 
@@ -48,6 +48,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 20em;
+  height:20em;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);

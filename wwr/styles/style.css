@@ -222,16 +222,16 @@ footer .social img {
     padding-top: 15px;
 }
 
-
 /* Create four equal columns that floats next to eachother */
 .rivers-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    gap: 0 1em;
 }
-#background1 {
+
+.background {
     background-color: #edddd4;
-    grid-column: 1/11;
-    grid-row: 1/2;
+    
 }
 .rivers-img{
     width: 100%;
@@ -240,12 +240,9 @@ footer .social img {
     box-shadow: 5px 5px 10px black;
 }
 .mainfork1_img{
-    margin: auto;
-    margin-right: 8px;
-    max-width: 480px;
-    max-height: 480px;
     grid-column: 5/8;
     grid-row: 1/2;
+    align-self: center;
 }
 .mainfork2_img{
     margin: auto;
@@ -255,7 +252,7 @@ footer .social img {
     grid-column: 8/11;
     grid-row: 1/2;
 }
-.mainfork_msg {
+.left-column{
     margin: auto;
     align-items: center;
     background-color: #772e25;
@@ -266,22 +263,18 @@ footer .social img {
     margin: 10px;
     color: white;
 }
-.mainfork1:hover, .mainfork2:hover {
+.rivers-img:hover {
     color: #772e25;
     box-shadow: 0 4px 8px 0 #772e25, 0 6px 20px 0 #772e25;
     transition: 0.3s;
 }
 .separators{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 3em;
+    margin-bottom:3em;
+    height: 10px;
     width: 100%;
     grid-column: 3/9;
-    color: #c4685d;
-}
-#background2 {
-    background-color: #edddd4;
-    grid-column: 1/11;
-    grid-row: 3/4;
+    background-color: #c4685d;
 }
 .desolation1_img{
     margin: auto;
@@ -299,8 +292,7 @@ footer .social img {
     grid-column: 4/7;
     grid-row: 3/4;
 }
-.desolation_msg {
-    margin: auto;
+.right-column {
     align-items: center;
     background-color: #772e25;
     padding: 10px;
@@ -310,24 +302,19 @@ footer .social img {
     margin: 10px;
     color: white;
 }
+
 .desolation1:hover, .desolation2:hover {
     color: #772e25;
     box-shadow: 0 4px 8px 0 #772e25, 0 6px 20px 0 #772e25;
     transition: 0.3s;
 }
 
-#background3 {
-    background-color: #edddd4;
-    grid-column: 1/11;
-    grid-row: 5/6;
-}
 .canyon1_img{
     margin: auto;
     margin-left: 5px;
     max-width: 480px;
     max-height: 480px;
     grid-column: 5/7;
-    grid-row: 5/6;
 }
 .canyon2_img{
     margin: auto;
@@ -336,7 +323,6 @@ footer .social img {
     max-width: 480px;
     max-height: 480px;
     grid-column: 7/9;
-    grid-row: 5/6;
 }
 .canyon3_img{
     margin: auto;
@@ -344,25 +330,14 @@ footer .social img {
     max-width: 480px;
     max-height: 480px;
     grid-column: 9/11;
-    grid-row: 5/6;
 }
-.canyon_msg {
-    margin: auto;
-    align-items: center;
-    background-color: #772e25;
-    padding: 10px;
-    grid-column: 1/5;
-    grid-row: 5/6;
-    box-shadow: 5px 5px 10px black;
-    margin: 10px;
-    color: white;
-    z-index: 1;
-}
+
 .canyon1:hover, .canyon2:hover, .canyon3:hover {
     color: #772e25;
     box-shadow: 0 4px 8px 0 #772e25, 0 6px 20px 0 #772e25;
     transition: 0.3s;
 }
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

@@ -25,7 +25,7 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
-nav a:hover, .popup:hover{
+nav a:hover, .popup:hover, .sports-img:hover{
     color: #22577A;
     box-shadow: 0 0 5px #80ede4, 0 0 25px #80ede4, 0 0 50px #80ede4, 0 0 200px #80ede4;
     background-color: #80ede4;
@@ -36,9 +36,7 @@ a{
     grid-column: 1/2;
     align-items: center;
 }
-h2 {
-    margin: 0;
-}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -267,6 +265,160 @@ footer .social img {
         margin-top: 100px;
     }
 }
+
+
+/* ADITIONAL PAGE 2 CSS*/
+
+
+/* Create four equal columns that floats next to eachother */
+.left-sport-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0 1em;
+}
+
+.right-sport-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0 1em;
+}
+
+.card {
+    background-color: #22577A;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 100px 50px;
+    min-width: 830px;
+}
+.card:hover{
+    box-shadow: 0 0 3px black, 0 0 12px black, 0 0 25px black, 0 0 100px black;
+    background-color: #22577A;
+    transition: .5s;
+}
+
+.sports-img{
+    width: 280px;
+    border: 1px solid #283d3b;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+    margin: 20px 20px 20px 10px;
+}
+.right_img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+.left_img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.left-column{
+    margin: auto;
+    padding: 10px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10px;
+    color: white;
+    text-align: justify;
+}
+h5 {
+    margin: 5px;
+    text-align: center;
+    font-family: "Rubik Dirt", Arial, sans-serif;
+    color: white;
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.right-column {
+    margin: auto;
+    padding: 10px;
+    grid-column: 2/3;
+    grid-row: 1;
+    margin: 10px;
+    color: white;
+    text-align: justify;
+}
+
+.separators{
+    margin-top: 3em;
+    margin-bottom:3em;
+    height: 0px;
+    width: 50%;
+    grid-column: 3/9;
+    background-color: #c4685d;
+}
+
+@media screen and (max-width: 860px) {
+    .left-column, .right-column{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .right_img, .left_img{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .left-sport-grid, .right-sport-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        background-color: #22577A;
+        padding: 10px;
+        box-shadow: 5px 5px 10px black;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 100px 50px;
+        min-width: 10px;
+    }
+    h5 {
+        margin: 5px;
+        text-align: center;
+        font-family: "Rubik Dirt", Arial, sans-serif;
+        color: white;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

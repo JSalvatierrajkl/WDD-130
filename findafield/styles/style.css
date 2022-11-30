@@ -435,6 +435,17 @@ input[type=text], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+    /* Style inputs with type="email", to type emails */
+  input[type=email] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -454,13 +465,13 @@ input[type=text], select, textarea {
   
   /* Add a background color and some padding around the form */
   .form {
-    display: flex;
     margin: 0 auto;
+    margin-top: 50px;
     border-radius: 5px;
     color: white;
     background-color: #275434;
     padding: 20px;
-    width: 50%;
+    width: 40%;
     font-family: "Rubik Dirt", Arial, sans-serif;;
   }
 
@@ -539,3 +550,17 @@ input[type=text], select, textarea {
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+@media screen and (max-width: 840px) {
+    .form {
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        color: white;
+        background-color: #275434;
+        padding: 20px;
+        width: 350px;
+        font-family: "Rubik Dirt", Arial, sans-serif;;
+      }
+
+}
